@@ -48,9 +48,8 @@ function Homepage() {
   return (
     <div className="flex">
       <div
-        className={`bg-primary-green h-screen p-5 pt-8 ${
-          open ? "w-72" : "w-20"
-        } duration-400`}
+        className={`bg-primary-green h-screen p-5 pt-8 ${open ? "w-72" : "w-20"
+          } duration-400`}
       >
         {/* <img src={logoIcon} alt="Abrit-logo" /> */}
 
@@ -60,31 +59,27 @@ function Homepage() {
             onClick={() => setOpen(!open)}
           />
           <div
-            className={`origin-left font-medium text-2xl ${
-              !open && "scale-0"
-            } `}
+            className={`origin-left font-medium text-2xl ${!open && "scale-0"
+              } `}
           >
             Company
           </div>
         </div>
 
         <div
-          className={`flex items-center rounded-md bg-white-light mt-6 ${
-            !open ? "px-2.5" : "px-4"
-          } py-2`}
+          className={`flex items-center rounded-md bg-white-light mt-6 ${!open ? "px-2.5" : "px-4"
+            } py-2`}
         >
           <BsSearch
-            className={`text-white text-lg block float-left cursor-pointer ${
-              open && "mr-2"
-            }`}
+            className={`text-white text-lg block float-left cursor-pointer ${open && "mr-2"
+              }`}
           />
 
           <input
             type={"search"}
             placeholder="Search"
-            className={`text-base bg-transparent w-full text-white focus:outline-none ${
-              !open && "hidden"
-            }`}
+            className={`text-base bg-transparent w-full text-white focus:outline-none ${!open && "hidden"
+              }`}
           />
         </div>
 
@@ -93,17 +88,15 @@ function Homepage() {
             <>
               <li
                 key={index}
-                className={`text-gray-300 text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-white-light rounded-md ${
-                  menu.spacing ? "mt-9" : "mt-2"
-                }`}
+                className={`text-gray-300 text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-white-light rounded-md ${menu.spacing ? "mt-9" : "mt-2"
+                  }`}
               >
                 <span className="text-2xl block float-left">
                   {menu.icon ? menu.icon : <RiDashboardHorizontalFill />}
                 </span>
                 <span
-                  className={`text-base font-medium flex-1 ${
-                    !open && "hidden"
-                  } duration-200`}
+                  className={`text-base font-medium flex-1 ${!open && "hidden"
+                    } duration-200`}
                 >
                   {menu.title}
                 </span>

@@ -12,9 +12,13 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "paths": {
-      "*": ["node_modules/*"]
+      "*": ["node_modules/*"],
+      "Components/": ["./src/Components/*"],
+      "Data/": ["./src/Data/*"],
+      "Interfaces/": ["./src/Interfaces/", "./src/Interfaces/*"],
+      "Styles/": ["./src/Styles/*"]
     },
     "jsx": "react-jsx"
   },
-  "include": ["src/**/*", "src/App.tsx"]
+  "include": ["src/**/*", "src/Components/App.tsx"]
 }
